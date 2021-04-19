@@ -1,0 +1,1 @@
+bir sat?r kodla dunyay? degistirmek elindeyse,geride durma!
