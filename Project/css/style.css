@@ -24,7 +24,7 @@ body{
 .left{
     display: flex;
     padding: 15px;
-    font-family: 'Fira Sans', sans-serif;
+
 }
 
 .Language a{
@@ -89,6 +89,11 @@ body{
 
 .image{
     height: 400px;
-    background-image: url(../img/testimonials-bg.png) ;
-    display: inline;
+    background-image: url(../img/testimonials-bg.png);
+    display: inline-block;
+
+}
+.TopProducts{
+    height: 400px;
+
 }
