@@ -1,11 +1,23 @@
 /* bu daimi istifade edeceyimiz struktur faylidir.Butun layihelerimde istifade olunacaq */
-
+body{
+    margin: 0px;
+}
+.container-fluid{
+    width: 100%;
+    border: 1px solid gray;
+}
 .container{
     width: 1200px;
-    
+    margin: 0 auto;
+    border: 1px solid gray;
 }
 
-.row{}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 100% */
 
 .col-1{}
 .col-2{}

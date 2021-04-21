@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+   }
+
+.ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-bar{
+    height: 38px;
+    width: 1246;
+    background-image:url(../img/nav-bkg.jpg);
+    text-decoration: none;
+    color: #5e5e5e;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    }
+
+.left{
+    display: flex;
+    padding: 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.Language a{
+    text-decoration: none;
+    color: #808080;
+}
+
+ .Currency a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #808080;
+}
+.right{
+    padding: 15px;
+}
+.MyAccount a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.header{
+    background: white;
+    height: 107px;
+    width: 1246px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 0px;
+}
+
+.nav ul li{
+    display: inline-block;
+    }
+
+.nav ul li a{
+    color: #808080;;
+    margin-right:10px ;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 15;
+}
+
+ .search{
+    color: black;
+}
+
+.slide{
+    height: 400px;
+    padding: 15px 0px;
+    border: 1px solid rgb(245, 223, 223);
+    background-image: url(../img/main-banner-1-1903x670.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.image{
+    height: 400px;
+    background-image: url(../img/testimonials-bg.png) ;
+    display: inline;
+}

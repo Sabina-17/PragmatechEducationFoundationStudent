@@ -1,1 +1,1 @@
-bir sat?r kodla dunyay? degistirmek elindeyse,geride durma!
+bir satir kodla dunyayi degistirmek elindeyse,geride durma!
