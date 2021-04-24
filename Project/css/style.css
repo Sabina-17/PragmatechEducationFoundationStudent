@@ -15,15 +15,19 @@ body{
     color: #5e5e5e;
 }
 
-.container{
+.container-top-bar{
     display: flex;
+    margin: auto;
+    width: 80%;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 10px;
+    
+
     }
 
 .left{
     display: flex;
-    padding: 15px;
+    
 
 }
 
@@ -37,19 +41,23 @@ body{
     text-decoration: none;
     color: #808080;
 }
+.welcome p{
+    margin: 0px;
+}
 .right{
-    padding: 15px;
+    
 }
 .MyAccount a{
-    padding: 0px 20px;
+    
     text-decoration: none;
     color: #808080;
 }
 
 .header{
     background: white;
-    height: 107px;
-    width: 1246px;
+    height:auto;
+    width: 80%;
+    margin: auto;
 }
 
 .navbar{
@@ -57,8 +65,16 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 30px 0px;
     margin: 0px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul{
+    padding: 0px 50px;
 }
 
 .nav ul li{
@@ -68,15 +84,16 @@ body{
 .nav ul li a{
     color: #808080;;
     margin-right:10px ;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
-    padding: 0px 15;
+    padding: 0px 15px;
+    
 }
 
  .search{
     color: black;
 }
-
+#slide{}
 .slide{
     height: 400px;
     padding: 15px 0px;
@@ -87,13 +104,6 @@ body{
     background-position: center center;
 }
 
-.image{
-    height: 400px;
-    background-image: url(../img/testimonials-bg.png);
-    display: inline-block;
 
-}
-.TopProducts{
-    height: 400px;
 
 }
