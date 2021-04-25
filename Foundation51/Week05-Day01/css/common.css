@@ -1,0 +1,85 @@
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/* buttons */
+
+.btn {
+    padding: 10px 25px;
+    border: 1px solid darkgray;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn i {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.btn-default {
+    background: #2c7ae7;
+    border: none;
+    color: white;
+}
+
+
+/* section general styles */
+
+.section-padding {
+    padding: 50px 0px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-heading h5 {
+    font-size: .9em;
+    color: #2c7ae7
+}
+
+.section-heading h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/* text aligning styles */
+
+.text-align-center {
+    text-align: center;
+}
+
+
+/* text formatting styles */
+
+.secondary-heading {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.secondary-p {
+    color: gray;
+} 

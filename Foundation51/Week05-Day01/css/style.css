@@ -1,0 +1,50 @@
+/* statistics section styles */
+.statistics-heading{
+    position: relative;
+}
+.circle-heading{
+padding: 50px;
+width: 200px;
+height: 200px;
+box-sizing: border-box;
+border-radius: 50%;
+box-shadow: 0px 0px 5px black;
+position: absolute;
+top: 0px;
+right: 0px;
+background: white;
+z-index: 2;
+}
+.circle-heading h1{
+    font-size: 7em;
+    position: absolute;
+    top: 0px;
+    left: 41px;
+    font-weight: bolder;
+    color: #2c7ae7;
+}
+.circle-heading p{
+    position: absolute;
+    top: 122px;
+    left: 0px;
+    padding: 0px 48px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.circle-decoration {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #2c7ae7;
+    position: absolute;
+    top: -9px;
+    right: 44px;
+    z-index: 1;
+}
+
+.content-item{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}

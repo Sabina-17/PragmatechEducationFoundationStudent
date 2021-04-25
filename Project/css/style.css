@@ -104,6 +104,27 @@ body{
     background-position: center center;
 }
 
-
+#testimonials{
+    background-image: url(../img/testimonials-bg.png);
+    display: flex;
+    height: 400px;
+    padding: 70px ;
+    
+    width: 90%;
+}
+.image-container{
+    margin: auto;
+    width: 70%;
+    
+    
+}
+.img{
+    height: 400px;
+    padding: 20px 0px;
+    display: inline block;
+}
+#top-products{
+    height: 400px;
+    
 
 }
