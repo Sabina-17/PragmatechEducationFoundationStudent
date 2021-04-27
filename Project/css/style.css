@@ -104,24 +104,36 @@ body{
     background-position: center center;
 }
 
-#testimonials{
+#block-container{
     background-image: url(../img/testimonials-bg.png);
     display: flex;
+    display: inline-block;
     height: 400px;
-    padding: 70px ;
-    
+    padding: 60px ;
     width: 90%;
+   margin right: 50px;:
 }
 .image-container{
     margin: auto;
     width: 70%;
+    display:flex;
+    padding top: 70px;
+    padding bottom: 140px;
     
-    
+}
+
+.image-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    display: inline-block;
+    margin: 29px;
 }
 .img{
     height: 400px;
     padding: 20px 0px;
-    display: inline block;
+    
+    
 }
 #top-products{
     height: 400px;
