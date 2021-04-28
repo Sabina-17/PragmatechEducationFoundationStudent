@@ -127,7 +127,7 @@ body{
     color: black;
     font-size: 50px;
     display: inline-block;
-    margin: 29px;
+    
 }
 .img{
     height: 400px;
@@ -137,6 +137,20 @@ body{
 }
 #top-products{
     height: 400px;
+    text-align: center;
     
-
+} 
+.button a{
+    
+    display: inline block;
+    text-decoration: none;
+    color: black;
+}
+.row{
+    height: 400px;
+    display: inline-block;
+    
+}
+.col-12{
+    display: inline-block;
 }
