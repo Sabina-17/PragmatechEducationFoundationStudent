@@ -1,4 +1,4 @@
-body{
+[20:05, 5/1/2021] Jalə Xanım Pragmatich: body{
     margin: 0px;
     font-family: 'PT Sans', sans-serif;
    }
@@ -156,7 +156,7 @@ display: flex;
 
 #top-products{
     width: 100%;
-    height: 130vh;
+    height: auto;
     text-align: center;
     background-image: url('../img/producttab-bkg.png');
 } 
@@ -188,28 +188,25 @@ display: flex;
 .buttons a:hover{
     background-color: #808080;
 }
-.row{
-    height: 400px;
-    display: inline-block;
-    
-}
+
 .col-12{
-    display: inline-block;
-    
+ 
 }
 
 .project-items{
-    width: 80%;
-    margin: 45px 0px;
+ 
+    margin: 0px 0px;
     
 }
 .project-items-row{
     width: 100%;
     display: flex;
     padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
 }
 .project-item{
-
+margin: 0;
     height: auto;
 }
 .stars{
@@ -228,12 +225,9 @@ color: #649a58;
 .project-item span{
     
 }
-#img-slider{
-    height: auto;
-    width: 100%;
-}
+
 .img-slider{
-    height: 100vh;
+    height: auto;
     width: 100%;
    background-repeat: no-repeat;
     background-image: url('../img/cms-banner-1.jpg');
@@ -277,4 +271,43 @@ border: 1px solid #649a58;
     margin-bottom: 45px;
      
 }
+.blog-container{
+    width: 80%;
+    margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:30px;
+}
+.blog-item{
 
+}
+.blog-item img{
+    height:257px ;
+    width: 430px;
+    object-fit: cove;
+}
+.brend-images{
+    padding: 70px 0px;
+    margin: auto;
+    width: 1166px;
+}
+.brend-container{
+    width: 100%;
+}
+.brend-container img{
+    padding-right: 20px;
+}
+
+
+.footer-blok ul{
+    list-style: none;
+    padding: 0;
+    padding-right: 30px;
+}
+.footer-blok ul li{
+    margin: 10px 0px;
+}
+.footer-container{
+    background-image: url(../img/footer-pattan-left.png);
+    background-image: url(../img/footer-pattan-right.png);
+}
