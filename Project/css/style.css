@@ -308,6 +308,34 @@ border: 1px solid #649a58;
     margin: 10px 0px;
 }
 .footer-container{
-    background-image: url(../img/footer-pattan-left.png);
-    background-image: url(../img/footer-pattan-right.png);
+    /*background-image: url(../img/footer-pattan-left.png);
+    background-image: url(../img/footer-pattan-right.png);*/
+}
+
+.extra-link ul{
+    list-style: none;
+    padding: 0;
+    padding-right: 30px;
+}
+
+.extra-link ul li{
+    margin: 10px 0px;
+}
+
+.my-account ul{
+    list-style: none;
+    padding: 0;
+    padding-right: 30px;
+}
+..my-account ul li{
+    margin: 10px 0px;
+}
+
+.contact ul{
+    list-style: none;
+    padding: 0;
+    padding-right: 30px;
+}
+.contact ul li{
+    margin: 10px 0px;
 }
