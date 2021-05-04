@@ -1,0 +1,16 @@
+.main {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.box {
+    width: 1400px;
+    position: absolute;
+    height: 500px;
+    border: 1px solid gray;
+    background: green;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+} 
