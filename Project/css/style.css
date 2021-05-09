@@ -92,7 +92,9 @@ body{
 }
 
  .search{
-    color: rgb(15, 15, 15);
+    color: #243238;
+    font-size: 20px;
+    
 }
 .search a:hover{
     background-color: #649a58;
@@ -100,7 +102,7 @@ body{
 
 .basket{
     margin: 20px;
-    font-size: 30px;
+    font-size: 25px;
     background-color: whitesmoke;
 }
 .basket a:hover{
@@ -152,17 +154,28 @@ display: flex;
     
     
 }
+
+.cate-title {
+    height: 100%;
+     width:20%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     justify-content: flex-end;
+ }
+
 .cate-title a{
     font-size: 14px;
     line-height: 22px;
     font-weight: 600;
-    letter-spacing: 20px;
+    letter-spacing: 0px;
     text-transform: uppercase;
     word-wrap: break-word;
     max-width: 13px;
     color: #ffffff;
     padding: 15px 15px;
     background: #649a58;
+
 }
 
 
@@ -419,14 +432,25 @@ border: 1px solid #649a58;
 }
 .blog-container{
     width: 80%;
-    margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap:30px;
+    margin: 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:30px;
 }
-.blog-item{
+.blog-item h4 a{
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
 
+.blog-item h4 a:hover{
+    color: #649a58;
 }
+.blog-item p{
+    font-size: 15px;
+    color: #999;
+}
+
 .blog-item img{
     height:257px ;
     width: 430px;
@@ -448,12 +472,27 @@ border: 1px solid #649a58;
     height: 400px;
     margin: 10px 50px ;
     padding: 30px;
-
+    background-image: url(../img/footer-pattan-right.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 10px;
     
-    
-    /*background-image: url(../img/footer-pattan-left.png);
-    background-image: url(../img/footer-pattan-right.png);*/
 }
+
+{
+   /* height: 400px;
+    padding: 15px 0px;
+    border: 1px solid rgb(245, 223, 223);
+    background-image: url(../img/8888.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+
+        background-image: url(../img/footer-pattan-left.png);
+    
+        background-image: url(../img/footer-pattan-right.png);
+}
+
 .h2{
     color: #000000;
 }
