@@ -45,8 +45,12 @@ body{
 .welcome p{
     margin: 0px;
 }
-.right{
-    
+.dropdown-myaccount{
+    float: right;
+    margin: 0px;
+    position: relative;
+    z-index: 9;
+}
 }
 .myAccount a{
     
