@@ -156,12 +156,12 @@ display: flex;
     font-size: 14px;
     line-height: 22px;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: 20px;
     text-transform: uppercase;
     word-wrap: break-word;
-    max-width: 45px;
+    max-width: 13px;
     color: #ffffff;
-    padding: 15px 18px;
+    padding: 15px 15px;
     background: #649a58;
 }
 
@@ -340,6 +340,7 @@ color: #649a58;
     color: white;
     opacity: 0;
     transition: all .3s ease;
+    width: 120px;
 }
 
 .social-item span:after {
@@ -456,7 +457,9 @@ border: 1px solid #649a58;
 .h2{
     color: #000000;
 }
-
+.footer-blok{
+    margin-right: 90px;
+}
 .footer-blok ul{
     list-style: none;
     padding: 0;
@@ -467,7 +470,9 @@ border: 1px solid #649a58;
     margin: 30px 0px;
     color: #a4a4a4;
 }
-
+.extra-link {
+    margin-right: 30px;
+}
 .extra-link ul{
     list-style: none;
     padding: 0;
@@ -478,7 +483,9 @@ border: 1px solid #649a58;
     margin: 30px 0px;
     color: #a4a4a4;
 }
-
+.my-account {
+    margin-right: 90px;
+}
 .my-account ul{
     list-style: none;
     padding: 0;
@@ -517,7 +524,38 @@ color:  #649a58;
 }
 .foot{
     background-color: #f7f1db;
-    padding: 40px;
-    text-align: center;
+    height: 50px;
+    display: flex;
+    font-size: 18px;
+    
+    
 }
 
+.kidpay{
+     height: 50px;
+     width: 70%;
+     text-align: center;
+     margin-top: 17px;
+
+
+}
+.kidpay span{
+    margin-left: 100px;
+}
+
+.mail{
+    background-color:#a4a4a4;
+    height: 50px;
+    width: 30%;
+   
+}
+.mail input{
+    font-size: 18px;
+    padding: 12px;
+}
+.mail a{
+    color: black;
+}
+.mail a:hover{
+    color: #649a58;
+}

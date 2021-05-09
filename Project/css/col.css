@@ -1,0 +1,165 @@
+body{
+    margin: 0px;
+    font-family: 'Fira Sans', sans-serif;
+   }
+
+.ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-bar{
+    height: 38px;
+    width: 100%;
+    background-image:url(../img/nav-bkg.jpg);
+    text-decoration: none;
+    color: #5e5e5e;
+}
+
+.container-top-bar{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    padding: 10px;
+    
+
+    }
+
+.left{
+    display: flex;
+    
+
+}
+
+.language a{
+    text-decoration: none;
+    color: #808080;
+}
+
+.language a:hover{
+    color: #649a58;
+}
+
+.currency a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.currency a:hover{
+    color: #649a58;
+}
+.welcome p{
+    margin: 0px;
+}
+.right{
+    
+}
+.myAccount a{
+    
+    text-decoration: none;
+    color: #808080;
+}
+
+.myAccount a:hover{
+    color: #649a58;
+}
+
+.header{
+    background: white;
+    height:auto;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+    margin: 0px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+.nav ul{
+    padding: 0px 50px;
+}
+
+.nav ul li{
+    display: inline-block;
+    }
+
+.nav ul li a{
+    color: #243238;
+    margin-right:30px ;
+    font-size: 18px;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 0px 15px;
+    
+}
+
+.nav ul li a:hover{
+    color: #649a58;
+}
+
+ .search a{
+    color: #243238;
+    font-size: 20px;
+    
+}
+.search a:hover{
+    background-color: #649a58;
+}
+
+.basket a{
+    margin: 20px;
+    font-size: 25px;
+    color: #243238;
+}
+.basket a:hover{
+    color: #649a58;
+}
+
+.fashion{
+    height: 100px;
+    width: 100%;
+    background-image:url(../img/nav-bkg.jpg);
+    display: flex;
+    box-sizing: border-box;
+    margin: 0px 0 50px;
+    padding: 20px;
+}
+
+.home{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.home ul li{
+    display: inline-flex;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 20px;
+
+}
+.home ul li a{
+    color: #262626;
+    text-decoration: none;
+  
+}
+
+.home ul li a:hover{
+    color: #649a58;
+    text-decoration: underline;
+}
