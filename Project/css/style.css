@@ -36,28 +36,30 @@ body{
     text-decoration: none;
     color: #808080;
 }
-
+.language a:hover{
+    color: #649a58;
+}
  .currency a{
     padding: 0px 20px;
     text-decoration: none;
     color: #808080;
 }
+.currency a:hover{
+    color: #649a58;
+}
 .welcome p{
     margin: 0px;
 }
-.dropdown-myaccount{
-    float: right;
-    margin: 0px;
-    position: relative;
-    z-index: 9;
-}
-}
+
 .myAccount a{
     
     text-decoration: none;
     color: #808080;
 }
 
+.myAccount a:hover{
+    color: #649a58;
+}
 .header{
     background: white;
     height:auto;
@@ -88,13 +90,16 @@ body{
 
 .nav ul li a{
     color: #808080;;
-    margin-right:10px ;
-    font-size: 16px;
+    margin-right:30px ;
+    font-size: 18px;
+    line-height: 1.5px;
     text-decoration: none;
     padding: 0px 15px;
     
 }
-
+.nav ul li a:hover{
+    color: #649a58;
+}
  .search{
     color: #243238;
     font-size: 20px;
@@ -394,23 +399,33 @@ color: #649a58;
     width: 100%;
    background-repeat: no-repeat;
     background-image: url('../img/cms-banner-1.jpg');
+    max-width: 100%
 }
 .img-slider-content{
     width: 40%;
-    padding: 60px 0px 60px 870px;
-    
+    padding: 180px 0px 60px 1000px;
+    max-width: 100%
 }
 .img-slider-content p{
-   color: white;
+   color: #ffffff;
    width: auto;
    padding: 5px 32px;
-   font-size: 12px;
+   font-size: 16px;
+   line-height: 15px;
+   letter-spacing: 1.5px;
    background-color: #649a58;
-border: 1px solid #649a58;
+   margin-bottom: 12px;
+   display: inline-block;
+   box-sizing: border-box;
 }
 .img-slider-content h1{
     font-size: 50px;
     font-weight: bold;
+margin-top: 20px;
+    line-height: 60px;
+    font-weight: 700;
+    padding-bottom: 54px;
+    color: #000000;
 }
 .img-slider-content h3{
     color: #3c3c3c;
