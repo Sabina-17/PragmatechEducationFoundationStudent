@@ -49,6 +49,14 @@ body{
 }
 .welcome p{
     margin: 0px;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+}
+.right{
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    line-height: 16px;
 }
 
 .myAccount a{
@@ -91,7 +99,7 @@ body{
 .nav ul li a{
     color: #808080;;
     margin-right:30px ;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5px;
     text-decoration: none;
     padding: 0px 15px;
@@ -100,19 +108,20 @@ body{
 .nav ul li a:hover{
     color: #649a58;
 }
- .search{
+ .search a{
     color: #243238;
     font-size: 20px;
     
 }
 .search a:hover{
-    background-color: #649a58;
+    
+    color: #649a58;
 }
 
-.basket{
+.basket a{
     margin: 20px;
     font-size: 25px;
-    background-color: whitesmoke;
+    color: #243238;
 }
 .basket a:hover{
     color: #649a58;
