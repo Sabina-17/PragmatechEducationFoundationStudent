@@ -601,8 +601,9 @@ color:  #649a58;
 .kidpay{
      height: 50px;
      width: 70%;
-     text-align: center;
-     margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
