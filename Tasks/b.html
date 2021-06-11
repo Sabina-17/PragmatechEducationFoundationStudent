@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.main-navbar nav{
+list-style: none;
+display: flex;
+}
+.main-navbar nav li{
+    padding: 42px 15px 42px 0px;
+}
+.main-navbar nav li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #222;
+    transition: .5s ease;
+}
+
+.dropdown li{
+font-size: 16px;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+margin: 0;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 8px 25px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+    list-style: none;
+}
+.dropdown-content a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 10;
+    position: absolute;
+    background: var(--theme-deafult-color);
+    transition: 0.3s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+.dropdown-content a:hover:after{
+    width: 50%;
+    left:10;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ 
+.main-navbar nav li a i{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.main-navbar nav li a:hover{
+    color: var(--theme-deafult-color);
+}
+
+
+    </style>
+
+</head>
+<body>
+    <nav></nav>
+     
+<div class="dropdown">
+                
+     <li><a href="1">Fashion</a></li>
+        <div class="dropdown-content">
+                    <a href="#">Close</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+        </div> 
+</div>
+                <li><a href="2">Clothing</a></li>
+                <li><a href="3">Footwear</a></li>
+                <li><a href="4">Western</a></li>
+                <li><a href="5">Shoes</a></li>
+                <li><a href="6">More</a></li>
+      
+</body>
+</html>
+
+

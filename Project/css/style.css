@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     margin: 0px;
     font-family: 'Fira Sans', sans-serif;
@@ -411,15 +416,14 @@ color: #649a58;
 
 }
 .img-slider-content{
-    width: 40%;
-    padding: 180px 0px 60px 1000px;
-    max-width: 100%
+        padding: 232px 0px 151px 906px;
 }
+
 .img-slider-content p{
    color: #ffffff;
    width: auto;
    padding: 5px 32px;
-   font-size: 16px;
+   font-size: 12px;
    line-height: 15px;
    letter-spacing: 1.5px;
    background-color: #649a58;
@@ -428,9 +432,9 @@ color: #649a58;
    box-sizing: border-box;
 }
 .img-slider-content h1{
-    font-size: 50px;
+    font-size: 57px;
     font-weight: bold;
-margin-top: 20px;
+    margin-top: 20px;
     line-height: 60px;
     font-weight: 700;
     padding-bottom: 54px;
@@ -439,6 +443,8 @@ margin-top: 20px;
 .img-slider-content h3{
     color: #3c3c3c;
     font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;   
 }
 
 .f-products{
@@ -456,27 +462,17 @@ margin-top: 20px;
     text-align: center;
     font-size: 36px;
     margin-bottom: 45px;
-     
 }
-/*.blog-container{
-    width: 80%;
-    margin: 0px 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:30px;*/
-
 
 .blog-container{
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .blog-item{
     width:30%;
-    
 }
 
 .blog-item img{
@@ -484,6 +480,7 @@ margin-top: 20px;
     width: 100%;
     object-fit: cover;
 }
+
 .blog-item h4 a{
     font-size: 20px;
     color: #333;
@@ -523,22 +520,12 @@ margin-top: 20px;
     background-repeat: no-repeat;
     background-position: right top;
     margin-right: 10px;
-    
 }
-
-{
-   /* height: 400px;
-    padding: 15px 0px;
-    border: 1px solid rgb(245, 223, 223);
-    background-image: url(../img/8888.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;*/
 
         background-image: url(../img/footer-pattan-left.png);
     
         background-image: url(../img/footer-pattan-right.png);
-}
+
 
 .h2{
     color: #000000;
@@ -609,11 +596,11 @@ color:  #649a58;
     color:#a4a4a4 ;
 }
 .foot{
-    background-color: #f7f1db;
+    background: #f7f1db;
     height: 50px;
     display: flex;
     font-size: 18px;
-    
+    justify-content: flex-end;
     
 }
 
@@ -621,28 +608,49 @@ color:  #649a58;
      height: 50px;
      width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-
-
+    padding: 0px 20px;
 }
-.kidpay span{
-    margin-left: 100px;
+
+.toys{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
+
+.kidpay span{}
 
 .mail{
-    background-color:#a4a4a4;
+    background: #f7f1db;
     height: 50px;
-    width: 30%;
-   
+    width: 25%;
+   display: flex;
 }
+
 .mail input{
-    font-size: 18px;
-    padding: 12px;
+    font-size: 12px;
+    letter-spacing: .6px;
+    font-weight: 400;
+    color: #262626;
+    padding:18px 0px;
+    width: 75%;
+    border: none;
+    height: 100%;
+    text-align: center;
 }
-.mail a{
-    color: black;
+
+.plane{
+    border: none;
+    height: 100%;
+    width: 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
-.mail a:hover{
+.plane :hover{
     color: #649a58;
 }
+
