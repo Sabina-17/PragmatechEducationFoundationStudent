@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn {
+        height: 30px;
+        width: 30px;
+        color: #808080;
+        ;
+    }
+    
+    .btn:hover {
+        background: green;
+        color: white
+    }
+    
+    .boxes {
+        padding: 50px;
+    }
+    
+    .box {
+        height: 110px;
+        width: 93px;
+        border: 1px solid gray;
+        display: flex;
+        display: inline-block;
+        margin: 10px;
+    }
+</style>
+
+<body>
+
+    <button class='btn btnLeft' onclick='moveLeft()'></button><i class="fal fa-angle-left"></i></button>
+    <button class="btn btnRight" onclick='moveRight()'><i class="fal fa-angle-right"></i></button>
+
+
+    <div class="boxes">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <!-- <div class="box">4</div> 
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div> -->
+    </div>
+</body>
+
+</html>
