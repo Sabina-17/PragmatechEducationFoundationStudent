@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<style>
+    .slider {
+        border: 1px solid black;
+        height: 130px;
+        width: 490px;
+        margin: 30px;
+    }
+    
+    .box {
+        border: 1px solid red;
+        display: inline-block;
+        height: 110px;
+        width: 137px;
+        margin: 10px;
+    }
+    
+    .box img {
+        width: 80%;
+        height: 108px;
+        padding-left: 12px;
+    }
+    
+    .btn {
+        height: 30px;
+        width: 30px;
+        color: #000000;
+        background-color: #f5f5f5;
+        cursor: pointer;
+        transition: all .3s ease;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .btn:hover {
+        background: #000000;
+        color: white
+    }
+    
+    .sliderArrows {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        position: absolute;
+        top: 10%;
+    }
+</style>
+
+<body>
+
+    <div class="sliderArrows">
+        <div class="btn prevBtn" onclick='goPrev()'><i class="fas fa-chevron-left"></i></div>
+        <div class="btn nextBtn" onclick='goNext()'><i class="fas fa-chevron-right"></i></div>
+    </div>
+
+    <div class="slider">
+        <div class="box"><img src="img/01-439x534.jpg" alt=""></div>
+        <div class="box"><img src="img/02-439x534.jpg" alt=""></div>
+        <div class="box"><img src="img/03-439x534.jpg" alt=""></div>
+    </div>
+
+    <script>
+        let img = document.querySelector('.slider img');
+        let imgSources = [
+            "img/01-439x534.jpg",
+            "img/02-439x534.jpg",
+            "img/03-439x534.jpg",
+            "img/04-439x534.jpg",
+            "img/05-439x534.jpg",
+            "img/06-439x534.jpg",
+            "img/07-439x534.jpg"
+
+        ]
+
+        let count = 0;
+
+        function goPrev() {
+            if (count < 1) {
+                img.setAttribute('src', imgSources[6])
+                count = 6
+            } else {
+                img.setAttribute('src', imgSources[count])
+                count--
+            }
+            console.log('countun deyeri: ', count)
+        }
+
+        function goNext() {
+            if (count > 6) {
+                img.setAttribute('src', imgSources[0])
+                count = 0
+            } else {
+                img.setAttribute('src', imgSources[count])
+                count++
+            }
+            console.log('countun deyeri: ', count)
+        }
+    </script>
+</body>
+
+</html>
