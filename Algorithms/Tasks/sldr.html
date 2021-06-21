@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<style>
+    * {}
+    
+    .slider-container {}
+    
+    .slider {
+        width: 31%;
+        height: 133px;
+        overflow: hidden;
+        border: 1px solid black;
+        margin: 30px;
+    }
+    
+    .slider .slider-frame {}
+    
+    .slider .slider-frame .slider-item {
+        border: 1px solid red;
+        display: inline-block;
+        height: 110px;
+        width: 137px;
+        margin: 10px
+    }
+    
+    .slider .slider-frame .slider-item img {
+        width: 80%;
+        height: 108px;
+        padding-left: 12px;
+    }
+    
+    .btn {
+        height: 30px;
+        width: 30px;
+        color: #000000;
+        background-color: #f5f5f5;
+        cursor: pointer;
+        transition: all .3s ease;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .btn:hover {
+        background: #000000;
+        color: white
+    }
+    
+    .sliderArrows {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        position: absolute;
+        top: 10%;
+    }
+</style>
+
+<body>
+    <div class="slider-container">
+        <div class="sliderArrows">
+            <div class="btn prevBtn"><i class="fas fa-chevron-left"></i></div>
+            <div class="btn nextBtn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="slider">
+            <div class="slider-frame">
+                <div class="slider-item">
+                    <img src="img/01-439x534.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="img/02-439x534.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="img/03-439x534.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="img/04-439x534.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="img/05-439x534.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="img/06-439x534.jpg" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="img/07-439x534.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        _slider = document.querySelector('.slider')
+        item = document.querySelector('.slider-item')
+        items = document.querySelectorAll('.slider-item')
+        let sliderFrame = document.querySelector('.slider-frame')
+
+        let sliderPos = 0;
+
+        for (let i = 0; i < items.length; i++) {
+            items[i].style.width = _slider.clientWidth / 3 + 'px';
+        }
+
+        sliderFrame.style.width = items.length * item.clientWidth + 'px';
+
+
+        // prevBtn
+        let prevBtn = document.querySelector('.prevBtn')
+
+        prevBtn.onclick = function() {
+            sliderPos += 300;
+            sliderFrame.style.left = sliderPos + 'px'
+        }
+
+        // nextBtn
+        let nextBtn = document.querySelector('.nextBtn')
+
+        nextBtn.onclick = function() {
+            sliderPos -= 300;
+            sliderFrame.style.left = sliderPos + 'px'
+        }
+    </script>
+</body>
+
+</html>
