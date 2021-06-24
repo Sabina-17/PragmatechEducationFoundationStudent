@@ -10,26 +10,35 @@
     <title>Document</title>
 </head>
 <style>
-    * {}
-    
-    .slider-container {}
-    
-    .slider {
-        width: 31%;
-        height: 133px;
-        overflow: hidden;
-        border: 1px solid black;
-        margin: 30px;
+    * {
+        margin: 0 auto;
+        padding: 0;
     }
     
-    .slider .slider-frame {}
+    .slider-container {
+        width: 100%;
+        padding: 150px 0;
+    }
+    
+    .slider {
+        width: 46%;
+        height: 130px;
+        overflow: hidden;
+        border: 1px solid black;
+        margin-right: 448px;
+    }
+    
+    .slider .slider-frame {
+        height: 100%;
+        position: relative;
+        transition: all .3s ease;
+        left: 0px;
+    }
     
     .slider .slider-frame .slider-item {
-        border: 1px solid red;
         display: inline-block;
-        height: 110px;
-        width: 137px;
-        margin: 10px
+        width: 208px;
+        margin: 10px;
     }
     
     .slider .slider-frame .slider-item img {
@@ -57,9 +66,9 @@
     .sliderArrows {
         display: flex;
         justify-content: space-between;
-        width: 35%;
+        width: 98%;
         position: absolute;
-        top: 10%;
+        top: 45%;
     }
 </style>
 

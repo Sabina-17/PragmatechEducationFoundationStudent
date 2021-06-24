@@ -6,7 +6,7 @@ let sliderFrame = document.querySelector('.slider-frame')
 let sliderPos = 0;
 
 for (let i = 0; i < items.length; i++) {
-    items[i].style.width = _slider.clientWidth / 4 + 'px';
+    items[i].style.width = _slider.clientWidth / 3 + 'px';
 }
 
 sliderFrame.style.width = items.length * item.clientWidth + 'px';
