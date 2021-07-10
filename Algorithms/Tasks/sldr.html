@@ -15,6 +15,43 @@
         padding: 0;
     }
     
+    .container {
+        height: 1500px;
+        width: 100%;
+    }
+    
+    .row {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .col-5 {
+        margin: 0px 0px 0px 50px;
+    }
+    
+    .col-7 {}
+    
+    .product {}
+    
+    .caption {}
+    
+    .caption h3 {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0 0 5px;
+        color: #649a58;
+    }
+    
+    .containers {
+        height: 400px;
+        width: 50%;
+        margin: 50px;
+        border: 2px solid red;
+    }
+    
     .slider-container {
         width: 100%;
         padding: 150px 0;
@@ -73,6 +110,8 @@
 </style>
 
 <body>
+
+
     <div class="slider-container">
         <div class="sliderArrows">
             <div class="btn prevBtn"><i class="fas fa-chevron-left"></i></div>
@@ -121,12 +160,15 @@
 
 
         // prevBtn
+
+
         let prevBtn = document.querySelector('.prevBtn')
 
         prevBtn.onclick = function() {
             sliderPos += 300;
             sliderFrame.style.left = sliderPos + 'px'
         }
+
 
         // nextBtn
         let nextBtn = document.querySelector('.nextBtn')

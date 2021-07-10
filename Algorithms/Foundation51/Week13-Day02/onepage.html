@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px
+        }
+        
+        #home {
+            height: 600px;
+            background-color: gray;
+        }
+        
+        #about {
+            height: 700px;
+            background-color: green;
+        }
+        
+        #works {
+            height: 300px;
+            background-color: red;
+        }
+        
+        #contact {
+            height: 800px;
+            background-color: blue;
+        }
+        
+        .padding {
+            padding: 100px 0px;
+        }
+        
+        .section-heading {}
+        
+        .section-heading h2 {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .nav {
+            background: black;
+            color: white;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+        }
+        
+        .nav ul {
+            display: flex;
+        }
+        
+        .nav ul li {
+            padding: 10px 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            cursor: pointer;
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#" onclick="scrollSection(this)" data='home'>Home</a></li>
+            <li><a href="#" onclick="scrollSection(this)" data='about'>About</a></li>
+            <li><a href="#" onclick="scrollSection(this)" data='works'>Works</a></li>
+            <li><a href="#" onclick="scrollSection(this)" data='contact'>Contact</a></li>
+        </ul>
+    </div>
+    <section id="home" class="padding">
+        <div class="section-heading">
+            <h2>Homepage</h2>
+        </div>
+    </section>
+    <section id="about" class="padding">
+        <div class="section-heading">
+            <h2>About </h2>
+        </div>
+    </section>
+    <section id="works" class="padding">
+        <div class="section-heading">
+            <h2>Works</h2>
+        </div>
+    </section>
+    <section id="contact" class="padding">
+        <div class="section-heading">
+            <h2>Contact</h2>
+        </div>
+    </section>
+    <script>
+        function scrollSection(element) {
+            let dataId = element.getAttribute('data')
+            let scrollAmount = document.querySelector(`#${dataId}`).offsetTop;
+        }
+    </script>
+</body>
+
+</html>

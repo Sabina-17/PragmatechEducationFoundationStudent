@@ -202,10 +202,72 @@ body {
 }
 
 .col-5 {
+    height: 695px;
+    width: 28%;
     margin: 0px 0px 0px 50px;
 }
 
-.col-7 {}
+.imgbag {}
+
+.slider-container {
+    width: 218%;
+    padding-top: 10px;
+}
+
+.slider {
+    width: 46%;
+    height: 130px;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-right: 448px;
+}
+
+.slider .slider-frame {
+    height: 100%;
+    position: relative;
+    transition: all .3s ease;
+    left: 0px;
+}
+
+.slider .slider-frame .slider-item {
+    display: inline-block;
+    width: 124px;
+    margin: 10px;
+}
+
+.slider .slider-frame .slider-item img {
+    width: 80%;
+    height: 115px;
+    padding-left: 12px;
+}
+
+.btn {
+    height: 30px;
+    width: 30px;
+    color: #000000;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-align: center;
+    line-height: 30px;
+}
+
+.btn:hover {
+    background: #000000;
+    color: white
+}
+
+.sliderArrows {
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    position: absolute;
+    top: 103%;
+}
+
+.col-7 {
+    margin-left: 30px;
+}
 
 .product {}
 
