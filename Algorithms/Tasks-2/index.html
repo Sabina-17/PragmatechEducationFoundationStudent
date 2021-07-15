@@ -6,13 +6,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="app.js"></script>
+
 </head>
 <style>
-
+    .tab {
+        display: flex;
+        justify-content: center;
+        margin: 0px 10px;
+        padding: 15px 50px;
+        overflow: hidden;
+    }
+    
+    .tab button {
+        background-color: #f5f5f5;
+        margin: 0px 10px;
+        padding: 15px 50px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    .tab button:hover {
+        background-color: #649a58;
+        color: white;
+    }
+    
+    .tab button.active {
+        background-color: #649a58;
+        color: white;
+    }
+    
+    .tab a:hover {
+        background-color: #649a58;
+        color: white;
+    }
+    
+    .tabcontent {
+        padding: 30px;
+        border: 1px solid #ccc;
+        margin: 50px;
+        letter-spacing: 1px;
+        color: #808080;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    th {
+        background-color: #ededed;
+        text-align: left;
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid #dddddd;
+        border-collapse: collapse;
+        padding: 15px;
+    }
+    
+    .stars {
+        width: 100%;
+        display: flex;
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: lightgray;
+        margin: 15px 0;
+        margin: 0 0 15px;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .stars i:nth-child(n+1) {
+        color: #ffba00;
+    }
+    
+    .radio {
+        margin: 15px;
+        font-size: 50px;
+    }
+    
+    h4 {
+        margin: 20px;
+    }
+    
+    .pull-right {
+        text-align: right;
+    }
+    
+    .pull-right button {
+        background-color: #649a58;
+        color: white;
+        margin: 0px 10px;
+        padding: 15px 50px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    .pull-right button:hover {
+        background-color: black;
+        color: white;
+    }
 </style>
 
 <body>
+
+    <div class="tab">
+
+        <button class="tablinks" onclick="openTab(event, 'Desc')">Description</button>
+        <button class="tablinks" onclick="openTab(event, 'Spec')">Specification</button>
+        <button class="tablinks" onclick="openTab(event, 'Revi')">Reviews (1)</button>
+
+    </div>
+
+    <div id="Desc" class="tabcontent">
+        <p>
+            Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably
+            as possible - you might even forget you're at the office
+        </p>
+    </div>
+    <div id="Spec" class="tabcontent">
+        <table style="width:100%">
+
+            <th colspan="2">Memory</th>
+
+            <tr>
+                <td>test 1</td>
+                <td>16GB</td>
+
+            </tr>
+            <th colspan="2">Processor</th>
+            <tr>
+                <td>No. of Cores</td>
+                <td>4</td>
+
+            </tr>
+        </table>
+    </div>
+    <div id="Revi" class="tabcontent">
+
+        <table style="width:100%">
+
+            <tr>
+                <td>Matthew Wade</td>
+                <td style="text-align: right;">09/03/2017</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </td>
+
+            </tr>
+
+        </table>
+        <div class="text-right">
+            <h3>Write a review </h3>
+
+            <p><span style="color: #F00;">*</span>Your Name</p>
+            <input type="text" style="height: 50px; width: 100%;">
+        </div>
+        <h3><span style="color: #F00;">*</span>Your Review</h3>
+        <input type="text" style="height: 150px; width: 100%;">
+        <h4><span style="color: #a94442;">Note:</span> HTML is not translated!</h4>
+        <div class="rating-in" style="display: flex;">
+            <h4> <span style="color: #F00;">*</span>Rating</h4>
+            <h4> Bad </h4>
+            <div class="radio">
+                <input type="radio" name="rating" value="1">
+                <input type="radio" name="rating" value="2">
+                <input type="radio" name="rating" value="3">
+                <input type="radio" name="rating" value="4">
+                <input type="radio" name="rating" value="5">
+            </div>
+            <h4>Good</h4>
+        </div>
+        <div class="pull-right">
+            <button>Continue</button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <script>
+        function openTab(evt, TabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(TabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 
 </body>
 

@@ -191,9 +191,9 @@
                         <hr>
                         <div class="medya">
 
-                            <button style="width: 70px; background: #4267b2"><a href="#"><i class="fas fa-thumbs-up"></i></a></button>
-                            <button style="width: 70px; background: #1b95e0"><a href="#"><i class="fab fa-twitter"></i></a></button>
-                            <button style="width: 70px; background: #fe6d4c"><a href="#"><i class="fas fa-plus-square"></i></a></button>
+                            <button class="medya" style=" background: #4267b2"><i class="fas fa-thumbs-up"></i>Like 0</button>
+                            <button class="medya" style=" background: #1b95e0"><i class="fab fa-twitter"></i>Tweet</button>
+                            <button class="medya" style=" background: #fe6d4c"><i class="fas fa-plus-square"></i>Share</button>
 
                         </div>
                     </div>
@@ -204,20 +204,91 @@
 
         </div>
 
-        <div class="col-12">
-            <ul>
-                <li><a href="#" style="background-color: #649a58;color: white; ">Description</a></li>
-                <li><a href="#">Specification</a></li>
-                <li><a href="#">Reviews (1)</a></li>
-            </ul>
+        <div class="tab">
+
+            <button class="tablinks" onclick="openTab(event, 'Desc')">Description</button>
+            <button class="tablinks" onclick="openTab(event, 'Spec')">Specification</button>
+            <button class="tablinks" onclick="openTab(event, 'Revi')">Reviews (1)</button>
+
         </div>
 
-        <div class="tab-content">
+        <div id="Desc" class="tabcontent">
             <p>
                 Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably
                 as possible - you might even forget you're at the office
             </p>
         </div>
+        <div id="Spec" class="tabcontent">
+            <table style="width:100%">
+
+                <th colspan="2">Memory</th>
+
+                <tr>
+                    <td>test 1</td>
+                    <td>16GB</td>
+
+                </tr>
+                <th colspan="2">Processor</th>
+                <tr>
+                    <td>No. of Cores</td>
+                    <td>4</td>
+
+                </tr>
+            </table>
+        </div>
+        <div id="Revi" class="tabcontent">
+
+            <table style="width:100%">
+
+                <tr>
+                    <td>Matthew Wade</td>
+                    <td style="text-align: right;">09/03/2017</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </td>
+
+                </tr>
+
+            </table>
+            <div class="text-right">
+                <h3>Write a review </h3>
+
+                <p><span style="color: #F00;">*</span>Your Name</p>
+                <input type="text" style="height: 50px; width: 100%;">
+            </div>
+            <h3><span style="color: #F00;">*</span>Your Review</h3>
+            <input type="text" style="height: 150px; width: 100%;">
+            <h4><span style="color: #a94442;">Note:</span> HTML is not translated!</h4>
+            <div class="rating-in" style="display: flex;">
+                <h4> <span style="color: #F00;">*</span>Rating</h4>
+                <h4> Bad </h4>
+                <div class="radio">
+                    <input type="radio" name="rating" value="1">
+                    <input type="radio" name="rating" value="2">
+                    <input type="radio" name="rating" value="3">
+                    <input type="radio" name="rating" value="4">
+                    <input type="radio" name="rating" value="5">
+                </div>
+                <h4>Good</h4>
+            </div>
+            <div class="pull-right">
+                <button>Continue</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
 
     </div>
     </div>

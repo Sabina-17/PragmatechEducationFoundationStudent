@@ -7,75 +7,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .sidenav a,
-        .dropdown-btn {
-            padding: 6px 8px 6px 16px;
+        * {
+            list-style: none;
             text-decoration: none;
-            font-size: 13px;
-            color: #4e4e4e;
-            display: block;
-            border: none;
-            background: none;
-            width: 100%;
-            text-align: left;
+        }
+        
+        body {
+            margin: 0px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        
+        .ul {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .top-bar {
+            height: 38px;
+            width: 1246;
+            background-color: pink;
+            background-image: url(../img/nav-bkg.jpg);
+            text-decoration: none;
+            color: #5e5e5e;
+        }
+        
+        .container-top-bar {
+            display: flex;
+            margin: auto;
+            width: 80%;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        
+        .left {
+            display: flex;
+        }
+        
+        .language a {
+            text-decoration: none;
+            color: #808080;
+        }
+        
+        .language a:hover {
+            color: #649a58;
+        }
+        
+        .currency a {
+            padding: 0px 20px;
+            text-decoration: none;
+            color: #808080;
+        }
+        
+        .currency a:hover {
+            color: #649a58;
+        }
+        
+        .welcome p {
+            margin: 0px;
+            font-size: 11px;
+            letter-spacing: 0.3px;
+            line-height: 16px;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
             cursor: pointer;
+            font-size: 16px;
+            border: none;
             outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
         }
         
-        .sidenav a:hover,
-        .dropdown-btn:hover {
-            color: green;
+        .navbar a:hover,
+        .dropdown:hover .dropbtn,
+        .dropbtn:focus {
+            color: #649a58;
         }
         
-        .active {}
-        
-        .dropdown-container {
+        .dropdown-content {
             display: none;
-            background-color: white padding-left: 8px;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
         
-        .fa-caret-down {
-            float: right;
-            padding-right: 8px;
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .show {
+            display: block;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="sidenav">
-        <button class="dropdown-btn active" style=" font-size: 20px;">My Account 
-    <i class="fa fa-caret-down"></i>
-  </button>
+    <section id="header">
 
-        <div class="dropdown-container">
-            <a href="#">Register</a>
-            <a href="#">Login</a>
-            <a href="#">Wish List (0)</a>
-            <a href="#">Shopping Cart</a>
-            <a href="#">Checkout</a>
+        <div class="top-bar">
+            <div class="container-top-bar">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Language 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">English</a>
+                        <a href="#">Arabic  $ Currency</a>
 
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()"> $ Currency 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Euro</a>
+                        <a href="#">Pound Sterlig </a>
+                        <a href="#"> $ US Dollar</a>
+
+
+                    </div>
+                </div>
+
+                <div class="welcome">
+                    <p>Welcome To Kidpay Get Free Shipping On Orders Over $99</p>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">My Account 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Register</a>
+                        <a href="#">Login</a>
+                        <a href="#">Wish List (0)</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Checkout</a>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
 
 
-    <script>
-        let dropdown = document.getElementsByClassName("dropdown-btn");
-        let i;
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                let dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
                 }
-            });
-        }
-    </script>
+            }
+        </script>
 
 </body>
 
