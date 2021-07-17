@@ -260,7 +260,7 @@ body {
 .sliderArrows {
     display: flex;
     justify-content: space-between;
-    width: 28%;
+    width: 35%;
     position: absolute;
     top: 103%;
 }
@@ -534,4 +534,34 @@ h4 {
 .pull-right button:hover {
     background-color: black;
     color: white;
+}
+
+footer:before {
+    background: transparent url(img/footer-pattan-left.png) no-repeat scroll 0 0;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: auto;
+    bottom: 0;
+    width: 479px;
+    height: 601px;
+}
+
+footer:after {
+    background-image: url();
+    background: transparent url(img/footer-pattan-right.png) no-repeat scroll 0 0;
+    position: absolute;
+    content: "";
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 365px;
+    height: 482px;
+}
+
+ :before,
+ :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }

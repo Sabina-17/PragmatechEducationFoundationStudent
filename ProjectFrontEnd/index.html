@@ -72,7 +72,17 @@
     </section>
 
     <section id="slider">
-        <div class="slide"></div>
+        <div class="sliderArrows">
+            <div class="btn prevBtn" onclick='goPrev()'><i class="fas fa-chevron-left"></i></div>
+            <div class="btn nextBtn" onclick='goNext()'><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+
+
+        <div class="slider">
+            <img src="img/main-banner-1-1903x670.jpg" alt="">
+
+        </div>
     </section>
     <!-- header section end -->
 
@@ -607,65 +617,74 @@
 
     <section footer>
         <div class="footer-container">
-            <div class="row" style="display: flex; align-items: center; justify-content: center;">
-                <div class="footer-blok">
-                    <h2>Information</h2>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Delivery Information</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                        <li> Site Map</li>
-                    </ul>
-                </div>
-                <div class="extra-link">
-                    <h2>Extras</h2>
-                    <ul>
-                        <li>Brands</li>
-                        <li>Gift Certificates</li>
-                        <li>Affiliate</li>
-                        <li>Specials</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-
-                <div class="my-account">
-                    <h2>My Account </h2>
-                    <ul>
-                        <li> My Account</li>
-                        <li>Order History</li>
-                        <li>Wish List</li>
-                        <li>Newsletter</li>
-                        <li>Returns</li>
-                    </ul>
-                </div>
-
-                <div class="contact">
-                    <h2>Contact Us</h2>
-
-                    <ul>
-
-                        <li><i class="fas fa-map-marker-alt"></i>Kidpay - Demo Store </li>
-                        <li style="margin-left: 32px;">United States </li>
-
-
-                        <li><i class="fas fa-phone-alt"></i> 888-888-8888</li>
-                        <li><i class="far fa-envelope"></i>sales@yourcompany.com</li>
-                    </ul>
-
-                    <div class="block-social">
+            <div class="row-foot">
+                <div class="col-3">
+                    <div class="footer-blok">
+                        <h2>Information</h2>
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li>About Us</li>
+                            <li>Delivery Information</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms & Conditions</li>
+                            <li> Site Map</li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-3">
+                    <div class="extra-link">
+                        <h2>Extras</h2>
+                        <ul>
+                            <li>Brands</li>
+                            <li>Gift Certificates</li>
+                            <li>Affiliate</li>
+                            <li>Specials</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="my-account">
+                        <h2>My Account </h2>
+                        <ul>
+                            <li> My Account</li>
+                            <li>Order History</li>
+                            <li>Wish List</li>
+                            <li>Newsletter</li>
+                            <li>Returns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="contact">
+                        <h2>Contact Us</h2>
+
+                        <ul>
+
+                            <li><i class="fas fa-map-marker-alt"></i>Kidpay - Demo Store </li>
+                            <li style="margin-left: 32px;">United States </li>
+
+
+                            <li><i class="fas fa-phone-alt"></i> 888-888-8888</li>
+                            <li><i class="far fa-envelope"></i>sales@yourcompany.com</li>
+                        </ul>
+
+                        <div class="block-social">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </div>
+
+
 
         <div class="foot">
 
@@ -682,6 +701,7 @@
 
         </div>
     </section>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

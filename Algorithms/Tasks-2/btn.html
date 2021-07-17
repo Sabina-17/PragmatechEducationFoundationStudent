@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        footer {}
-        
         footer:before {
             background: transparent url(img/footer-pattan-left.png) no-repeat scroll 0 0;
             position: absolute;
@@ -37,14 +35,242 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
+        
+        .footer-container {
+            border: 2px solid red;
+            height: 850px;
+            width: 100%;
+        }
+        
+        .row {
+            border: 2px solid rebeccapurple;
+            height: 330px;
+            width: 90%;
+            margin-left: 75px;
+            margin-top: 420px;
+        }
+        
+        .col-3 {
+            border: 2px solid green;
+            height: 300px;
+            width: 22%;
+            display: inline-block;
+            padding: 10px;
+            background-color: white;
+        }
+        
+        .h2 {
+            color: #000000;
+        }
+        
+        .footer-blok ul {
+            list-style: none;
+            padding: 0;
+            padding-right: 20px;
+        }
+        
+        .footer-blok ul li {
+            margin: 30px 0px;
+            color: #a4a4a4;
+        }
+        
+        .extra-link ul {
+            list-style: none;
+            padding: 0;
+            padding-right: 100px;
+        }
+        
+        .extra-link ul li {
+            margin: 30px 0px;
+            color: #a4a4a4;
+        }
+        
+        .my-account ul {
+            list-style: none;
+            padding: 0;
+            padding-right: 50px;
+        }
+        
+        .my-account ul li {
+            margin: 30px 0px;
+            color: #a4a4a4;
+        }
+        
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            padding-right: 30px;
+        }
+        
+        .contact ul li {
+            margin: 27px 0px;
+            color: #a4a4a4;
+        }
+        
+        .contact ul li i {
+            padding: 0px 10px;
+            color: #649a58;
+        }
+        
+        .block-social ul li {
+            display: inline-block;
+            color: #a4a4a4;
+            padding: 10px;
+            font-size: 20px;
+            height: 0px;
+            margin: 0px;
+        }
+        
+        .block-social ul li i {
+            color: #a4a4a4;
+        }
+        
+        .foot {
+            background: #f7f1db;
+            height: 50px;
+            display: flex;
+            font-size: 18px;
+            justify-content: flex-end;
+        }
+        
+        .kidpay {
+            height: 50px;
+            width: 70%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        
+        .toys {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+        
+        .kidpay span {}
+        
+        .mail {
+            background: #f7f1db;
+            height: 50px;
+            width: 25%;
+            display: flex;
+        }
+        
+        .mail input {
+            font-size: 12px;
+            letter-spacing: .6px;
+            font-weight: 400;
+            color: #262626;
+            padding: 18px 0px;
+            width: 75%;
+            border: none;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .plane {
+            border: none;
+            height: 100%;
+            width: 10%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+        
+        .plane :hover {
+            color: #649a58;
+        }
     </style>
 </head>
 
 <body>
-    <footer>
+    <footer></footer>
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-3">
+                <div class="footer-blok">
+                    <h2>Information</h2>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Delivery Information</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li> Site Map</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="extra-link">
+                    <h2>Extras</h2>
+                    <ul>
+                        <li>Brands</li>
+                        <li>Gift Certificates</li>
+                        <li>Affiliate</li>
+                        <li>Specials</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="my-account">
+                    <h2>My Account </h2>
+                    <ul>
+                        <li> My Account</li>
+                        <li>Order History</li>
+                        <li>Wish List</li>
+                        <li>Newsletter</li>
+                        <li>Returns</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="contact">
+                    <h2>Contact Us</h2>
 
-    </footer>
+                    <ul>
 
+                        <li><i class="fas fa-map-marker-alt"></i>Kidpay - Demo Store </li>
+                        <li style="margin-left: 32px;">United States </li>
+
+
+                        <li><i class="fas fa-phone-alt"></i> 888-888-8888</li>
+                        <li><i class="far fa-envelope"></i>sales@yourcompany.com</li>
+                    </ul>
+
+                    <div class="block-social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="foot">
+
+        <div class="kidpay">
+
+            <div class="toys"><span>Powered By OpenCart Kidpay Toys Store ©️ 2021</span>
+                <span>Subscribe</span></div>
+        </div>
+
+        <div class="mail">
+            <input type="email" placeholder="Enter Your Email Address">
+            <div class="plane"><i class="fas fa-paper-plane"></i></div>
+        </div>
+
+    </div>
 
 
 

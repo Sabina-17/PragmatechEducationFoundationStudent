@@ -163,7 +163,7 @@
                         <p> <span>*</span> Delivery Date</p>
                     </div>
                     <div class="text">
-                        <input type="text" style="height: 30px;width: 700px;">
+                        <input type="date" style="height: 30px;width: 700px;">
                         <button class="calendar"><i class="fas fa-calendar-alt"></i></button>
 
                     </div>
@@ -206,7 +206,7 @@
 
         <div class="tab">
 
-            <button class="tablinks" onclick="openTab(event, 'Desc')">Description</button>
+            <button class="tablinks active" onclick="openTab(event, 'Desc')" id="defaultOpen">Description</button>
             <button class="tablinks" onclick="openTab(event, 'Spec')">Specification</button>
             <button class="tablinks" onclick="openTab(event, 'Revi')">Reviews (1)</button>
 
@@ -292,6 +292,9 @@
 
     </div>
     </div>
+
+
+    <footer></footer>
 
     <script src="js/app.js"></script>
 </body>
