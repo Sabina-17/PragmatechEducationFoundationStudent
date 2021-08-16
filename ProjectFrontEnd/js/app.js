@@ -1,3 +1,11 @@
+//navbar
+
+
+
+
+
+
+
 //index.html slider
 let img = document.querySelector('.slider img');
 let imgSources = [
@@ -30,6 +38,9 @@ function goNext() {
 }
 
 
+//index.html buttons
+
+
 //page1.html  gallery-image
 let bigImage = document.querySelector('.imgbag img')
 
@@ -57,10 +68,7 @@ document.getElementById("defaultOpen").click();
 
 
 //page1.html content-slider
-_slider = document.querySelector('.slider')
-item = document.querySelector('.slider-item')
-items = document.querySelectorAll('.slider-item')
-let sliderFrame = document.querySelector('.slider-frame')
+_slider = document.querySelector('.slider') item = document.querySelector('.slider-item') items = document.querySelectorAll('.slider-item') let sliderFrame = document.querySelector('.slider-frame')
 
 let sliderPos = 0;
 
