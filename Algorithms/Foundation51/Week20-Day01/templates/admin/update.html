@@ -1,0 +1,29 @@
+{% extends "admin/base/html" %} {% block content %}
+
+<h3 class="my-3">Yeni Xeber elave et</h3>
+
+<form>
+    <div class="mb-3">
+        <input type="email" class="form-control" placeholder="xeber basligi" name="news_title">
+    </div>
+
+    <div class="mb-3">
+        <input type="email" class="form-control" placeholder="qisa xeber " name="news_shot_info">
+    </div>
+
+    <div class="mb-3">
+        <input type="date" class="form-control" placeholder="qisa xeber " name="news_date">
+    </div>
+
+    <div class="mb-3">
+        <input type="file" class="form-control" name="news_img">
+    </div>
+
+    <div class="mb-3">
+        <textarea name="news_detali" class="form-control"></textarea>
+        <input type="email" class="form-control" placeholder="xeber basligi" name="news_title">
+    </div>
+    <button type="submit" class="btn btn-primary">elave et</button>
+</form>
+
+{% endblock %}

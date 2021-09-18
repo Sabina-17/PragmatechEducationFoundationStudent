@@ -1,0 +1,26 @@
+{% extends "admin/base/html" %} {% block content %}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Xeber basligi</th>
+            <th scope="col">xeberin tarixi</th>
+            <th scope="col">emeliyyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>
+                <a href="admin/delete" class="btn btn-primary">sil</a>
+                <a href="admin/update" class="btn btn-primary">yenile</a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+{% endblock %}
