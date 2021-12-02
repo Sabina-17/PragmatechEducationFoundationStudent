@@ -11,10 +11,8 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
-.top-bar {
-    height: 38px;
-    width: 1246;
+/* Info Bar Styles */
+#top-bar {
     background-image: url(../img/nav-bkg.jpg);
     text-decoration: none;
     color: #5e5e5e;
@@ -23,9 +21,11 @@ body {
 .container-top-bar {
     display: flex;
     margin: auto;
-    width: 80%;
+  
     justify-content: space-between;
     padding: 10px;
+    width: 1130px;
+    max-width: 100%;
 }
 
 .left {
@@ -73,20 +73,23 @@ body {
     color: #649a58;
 }
 
-.header {
+/* Navbar Styles */
+#navbar {
     background: white;
     height: auto;
-    width: 80%;
+ 
     margin: auto;
 }
 
-.navbar {
-    display: flex;
+.container-navbar {
+    isplay: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 30px 0px;
-    margin: 0px;
+
+    padding: 30px 10px;
+    margin: auto;
+    width: 1130px;
+    max-width: 100%
 }
 
 .nav {
@@ -117,9 +120,15 @@ body {
     color: #649a58;
 }
 
+.card-btn{
+    display: flex;
+}
+
 .search a {
     color: #243238;
     font-size: 20px;
+    height: 22px;
+    width: 22px;
 }
 
 .search a:hover {
@@ -136,6 +145,18 @@ body {
     color: #649a58;
 }
 
+.btn-z {
+    background-color: #649a58;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-z:hover {
+    background-color: black;
+}
 #slide {}
 
 .slider img {
