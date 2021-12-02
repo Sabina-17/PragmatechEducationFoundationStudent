@@ -1,4 +1,4 @@
-bir satir kodla dunyayi degistirmek elindeyse,geride durma!
+http://slimhamdi.net/istanbul/demos/index-dark.html
 
 
 
