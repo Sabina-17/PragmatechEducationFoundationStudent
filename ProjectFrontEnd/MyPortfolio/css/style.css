@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#home{
+    background-image: url(../img/fullscreendark.jpg);
+    
+    height: 670px;
+}
+.container-home{
+    /* background: #222 */
+}
+.navbar{}
+.IM{
+    margin-left: 800px;
+    color: white;
+}
+.btn button{
+    padding: 15px 40px;
+    border-radius: 30px;
+}
