@@ -5,6 +5,11 @@
 body {
     margin: 0px;
     font-family: 'Fira Sans', sans-serif;
+    color: #808080;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px
 }
 
 .ul {
@@ -14,18 +19,18 @@ body {
 /* Info Bar Styles */
 #top-bar {
     background-image: url(../img/nav-bkg.jpg);
-    text-decoration: none;
     color: #5e5e5e;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    min-height: 37px;
 }
 
 .container-top-bar {
     display: flex;
     margin: auto;
-  
-    justify-content: space-between;
+   justify-content: space-between;
     padding: 10px;
     width: 1130px;
-    max-width: 100%;
 }
 
 .left {
@@ -75,17 +80,17 @@ body {
 
 /* Navbar Styles */
 #navbar {
-    background: white;
-    height: auto;
- 
     margin: auto;
+    height: auto;
+    width: 100%;
+    z-index: 99;
+    
 }
 
 .container-navbar {
-    isplay: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 30px 10px;
     margin: auto;
     width: 1130px;
@@ -104,6 +109,11 @@ body {
 
 .nav ul li {
     display: inline-block;
+    position: relative;
+    float: none;
+    z-index: 20;
+    background-color: transparent;
+   
 }
 
 .nav ul li a {
@@ -120,9 +130,19 @@ body {
     color: #649a58;
 }
 
-.card-btn{
-    display: flex;
+.cart-basket{
+    text-decoration: none;
+    padding: 0;
+    color: #649a58;
+    background: #f5f5f5;
+    font-size: 0;
+    display: block;
+    text-align: right;
+    transition: none;
+    width: 92px;
+    height: 47px;
 }
+
 
 .search a {
     color: #243238;
@@ -136,9 +156,13 @@ body {
 }
 
 .basket a {
-    margin: 20px;
     font-size: 25px;
     color: #243238;
+   
+}
+.basket a i{
+    margin: 10px;
+    margin-right: 50px;
 }
 
 .basket a:hover {
@@ -146,12 +170,16 @@ body {
 }
 
 .btn-z {
-    background-color: #649a58;
     border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
     cursor: pointer;
+    color: #ffffff;
+    background: #649a58;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    position: absolute;
+    top: 88px;
+    right: 212px;
 }
 
 .btn-z:hover {
