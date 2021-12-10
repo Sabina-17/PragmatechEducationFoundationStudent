@@ -34,7 +34,7 @@ a {
     /* Home Styles */
 #home{
     background-image: url(../img/fullscreendark.jpg);
-    height: 670px;
+    height: 730px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -51,6 +51,11 @@ a {
   height: 300px;
  
 }
+.navbar-nav ul li{
+    border: 1px solid red;
+    text-decoration: none;
+    color: white;
+}
 .bars{
     border: 1px solid white;
     height: 70px;
@@ -62,16 +67,71 @@ a {
     font-size: 50px;
     text-align: center;
     margin: 10px;
+    text-decoration: none;
 }
 .bars:hover{
     
 }
-.IM{
+.freelancer{
+    border: 1px solid red;
     margin-left: 800px;
+    
+}
+.IM{
     padding-bottom: 30px;
     color: white;
 }
 .btn button{
     padding: 15px 40px;
     border-radius: 30px;
+    margin-left: 20px;
+    border: 1px solid  #ffb400;
 }
+.btn button:hover{
+    background-color: #ffb400;
+    color: white;
+}
+ /* About Styles */
+ #about{
+     border: 1px solid yellow;
+ }
+ .container-about{
+     border: 1px solid red;
+ }
+ .container-text{
+     border: 1px solid green;
+ }
+ .col-12{
+    display: flex;
+    border-bottom: 1px solid grey;
+ }
+ .col-6{
+    border: 1px solid purple;
+   
+ }
+ .name-work{
+     display: flex;
+}
+ .name{
+    border: 1px solid blue;
+ }
+ .work{
+    border: 1px solid brown;
+ }
+ .cv{
+    border: 1px solid yellowgreen;
+ 
+ }
+ .cv button{
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #ffb400;
+    width: 300px;
+    color: white;
+    font-size: 16px;
+   
+ }
+ .cv button i{
+     padding-right: 15px;
+ }
+ 
