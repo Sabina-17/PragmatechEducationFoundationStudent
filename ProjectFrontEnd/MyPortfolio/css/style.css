@@ -47,15 +47,22 @@ a {
 }
 .navbar{
     border: 1px solid white;  
-  width: 200px;
-  height: 300px;
+ position: absolute;
  
 }
-.navbar-nav ul li{
-    border: 1px solid red;
-    text-decoration: none;
-    color: white;
-}
+.navbar-nav {
+    width: 60px;
+    background-color: #333;
+    border-radius: 30px;
+  }
+  
+  .navbar-nav a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+   color: white;
+   }
+  
 .bars{
     border: 1px solid white;
     height: 70px;
@@ -94,29 +101,40 @@ a {
  /* About Styles */
  #about{
      border: 1px solid yellow;
+     background-color: #222;
+     color: white;
  }
  .container-about{
      border: 1px solid red;
+     position: relative;
  }
  .container-text{
      border: 1px solid green;
+     text-align: center;
+   
  }
  .col-12{
     display: flex;
     border-bottom: 1px solid grey;
+    margin: 0px 200px ;
+
  }
  .col-6{
     border: 1px solid purple;
+    width: 100%;
    
  }
  .name-work{
      display: flex;
+     height: 400px;
 }
  .name{
     border: 1px solid blue;
+    padding: 20px;
  }
  .work{
     border: 1px solid brown;
+    padding: 20px;
  }
  .cv{
     border: 1px solid yellowgreen;
@@ -134,4 +152,48 @@ a {
  .cv button i{
      padding-right: 15px;
  }
- 
+ .row{
+    margin: 0px 200px;
+     display: flex;"
+ }
+ .item{
+     margin-left: 40px;
+     padding-bottom: 50px;
+ }
+ .col{
+    margin: 0px 200px;
+    
+ }
+ .col4{
+    border: 1px solid red;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ffb400;
+ }
+ .skills{
+     display: flex;
+    
+    
+ }
+ /* portfoli styls */
+ #portfolio{}
+ .container-portfolio{ margin: 0px 200px;
+}
+ .images{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-gap: 20px;
+     
+ }
+ .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+ }
+ /* Content Stayls*/
+ #contact{}
+ .container-contact{}
+ .contact{
+    margin: 0px 200px;
+ }
