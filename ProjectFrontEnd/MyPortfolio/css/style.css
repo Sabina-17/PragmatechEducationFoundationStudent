@@ -110,16 +110,16 @@ padding-right: 11px;
 
  /* About Styles */
  #about{
-     border: 1px solid yellow;
+    
      background-color: #222;
      color: white;
  }
  .container-about{
-     border: 1px solid red;
+  
      position: relative;
  }
  .container-text{
-     border: 1px solid green;
+   
      text-align: center;
      padding: 60px 0px 54px;
    
@@ -128,56 +128,94 @@ padding-right: 11px;
      font-size: 55px;
      
  }
- . .container-text p{
+  .container-text p{
      font-size: 15px;
      margin: 20px 0px 0px;
  }
  .col-12{
     display: flex;
-    border-bottom: 1px solid grey;
+
     margin: 0px 200px ;
 
  }
+ .image{
+     border: 7px solid #ffb400;
+  
+ }
+ .image img{
+     height: 440px;
+     width: 440px;
+ }
  .col-6{
-    border: 1px solid purple;
+  
     width: 100%;
-   
+   margin-top: 26px;
+  
  }
  .name-work{
      display: flex;
-     height: 400px;
+ 
+     font-size: 16px;
 }
  .name{
-    border: 1px solid blue;
+  
     padding: 20px;
+ }
+ .name ul li{
+     padding-bottom: 21px;
+     
+ }
+ .name ul li span{
+     padding-left: 20px;
  }
  .work{
-    border: 1px solid brown;
-    padding: 20px;
+    
+    padding: 20px 40px;
+ }
+ .work ul li{
+     padding-bottom: 21px;
+ }
+ .work ul li span{
+     padding-left: 20px;
  }
  .cv{
-    border: 1px solid yellowgreen;
- 
+   
+ padding-left: 22px;
  }
  .cv button{
-    padding: 20px;
-    border-radius: 40px;
+   border-radius: 26px;
     background-color: #ffb400;
-    width: 300px;
-    color: white;
+     color: white;
     font-size: 16px;
-   
+    border: none;
+    height: 46px;
+    width: 230px;
+ }
+ .cv button:hover{
+     background-color: #555;
  }
  .cv button i{
      padding-right: 15px;
  }
  .row{
-    margin: 0px 200px;
-     display: flex;"
+    margin: 60px 200px;
+     display: flex;
+     border-top: 1px solid grey;
  }
  .item{
-     margin-left: 40px;
-     padding-bottom: 50px;
+     border-left: 1px solid #ffb400;
+     padding: 0px 39px 50px;
+    line-height: 30px;
+ }
+ .bullet{
+     border: 2px solid #ffb400;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 193px;
+    background: #222;
+  
  }
  .col{
     margin: 0px 200px;
@@ -187,13 +225,15 @@ padding-right: 11px;
     border: 1px solid red;
     width: 100%;
     padding-bottom: 30px;
-    border-bottom: 2px solid #ffb400;
+    /* border-bottom: 2px solid #ffb400; */
  }
  .skills{
      display: flex;
-    
-    
- }
+    }
+    span i{
+        padding-right: 10px;
+    }
+
  /* portfoli styls */
  #portfolio{}
  .container-portfolio{ margin: 0px 200px;
