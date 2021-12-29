@@ -217,15 +217,33 @@ padding-right: 11px;
     background: #222;
   
  }
+ .bulet{
+    border: 2px solid #ffb400;
+    height: 15px;
+    width: 15px;  
+    border-radius: 50%;
+    position: absolute;
+    left: 753px;
+    background: #222;
+ }
  .col{
     margin: 0px 200px;
     
  }
  .col4{
-    border: 1px solid red;
+  
     width: 100%;
-    padding-bottom: 30px;
-    /* border-bottom: 2px solid #ffb400; */
+    padding-bottom: 30px; 
+ }
+ .col4 img{
+     height: 70px;
+     width: 70px;
+     margin-left: 147px;
+ }
+ .col4 h4{
+    padding-bottom: 34px;
+    font-size: 20px;
+    text-align: center;
  }
  .skills{
      display: flex;
