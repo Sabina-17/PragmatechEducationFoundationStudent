@@ -5,11 +5,9 @@
 }
 body{
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
+    font:400 0.9em 'Poppins', sans-serif;
     color: #555;
     background: #fff;
-    font-size: 0.9em;
-    font-weight: 400;
     line-height: 1.5
 }
 
@@ -179,8 +177,7 @@ padding-right: 11px;
      padding-left: 20px;
  }
  .cv{
-   
- padding-left: 22px;
+   padding-left: 22px;
  }
  .cv button{
    border-radius: 26px;
@@ -234,6 +231,9 @@ padding-right: 11px;
   
     width: 100%;
     padding-bottom: 30px; 
+    border: 2px solid #ffb400;
+    margin-left: 20px;
+   
  }
  .col4 img{
      height: 70px;
@@ -253,8 +253,24 @@ padding-right: 11px;
     }
 
  /* portfoli styls */
- #portfolio{}
- .container-portfolio{ margin: 0px 200px;
+ #portfolio{
+    
+    background-color: #222;
+    color: white;
+ }
+ .container-portfolio{ 
+     margin: 0px 200px;
+}
+.text{
+    text-align: center;
+    padding: 60px 0px 54px;
+}
+.text h2{
+    font-size: 55px;
+}
+.text p{
+    font-size: 15px;
+    margin: 20px 0px 0px;
 }
  .images{
      position: relative;
@@ -262,9 +278,7 @@ padding-right: 11px;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: 1fr 1fr;
      grid-gap: 20px;
-
-     
- }
+}
  .images:hover .overlay {
     opacity: 1;
  }
@@ -290,13 +304,61 @@ padding-right: 11px;
     text-align: center;
  }
  /* Content Stayls*/
- #contact{}
+ #contact{
+      
+    background-color: #222;
+    color: #fff;
+ }
  .container-contact{}
  .contact{
     margin: 0px 200px;
  }
+ .col-4{
+    width: 30%;
+ }
+ .col-4 ul li{
+    padding-bottom: 26px;
+ }
+ .col-4 ul li span{
+     display: block;
+     margin-bottom: 10px;
+     font-size: 15px;
+ }
+ .col-4 ul li span i{
+     color: #ffb400;
+ }
+ .sosial{}
+ .sosial ul {
+     display: flex;
+     margin-top: 12px;
+ }
+ .sosial ul li{
+    border: 1px solid #ffb400;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 12px;
+ }
+ .sosial ul li:hover{
+     background-color: #ffb400;
+ }
+ .sosial ul li a:hover{
+     color: #fff;
+ }
+ .sosial ul li a{
+     color: #ffb400;
+ }
  .col-8{
-     margin-left: 300px;
+     margin-left: 90px;
+     width: 100%;
+     height: 492px;
+ }
+ .col-8 p{
+     font-size: 16px;
+     line-height: 32px;
+     margin: 0 0 24px;
  }
  .input{
      position: relative;
@@ -311,13 +373,45 @@ padding-right: 11px;
 
  .col-8 input{
     border-radius: 30px;
-    height: 30px;
-    width: 340px;
-    padding-left: 30px
+    height: 46px;
+    width: 377px;
+    padding-left: 49px;
+    margin: 0px 15px 30px 0px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 14px;
+    opacity: .7;
  }
  .col-8 i{
-     position: absolute;
-     top: 5px;
-     left: 7px;
-     font-size: 16px;
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    font-size: 16px;
+    color: #eee;
+    opacity: .3;
  }
+ .send{
+   position: relative;
+   top:210px
+    }
+    .send button{
+      border-radius: 26px;
+       background-color: #ffb400;
+        color: #fff;
+       font-size: 15px;
+       border: none;
+       height: 46px;
+       width: 230px;
+       padding: 0 33px;
+       line-height: 46px;
+       padding-left: 67px;
+       cursor: pointer;
+    }
+    .send button:hover{
+        background-color: #555;
+    }
+    .send button i{
+       top: 15px;
+       left: 40px;
+    }
