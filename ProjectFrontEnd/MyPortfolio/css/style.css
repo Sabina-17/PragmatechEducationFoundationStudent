@@ -362,6 +362,7 @@ padding-right: 11px;
  }
  .input{
      position: relative;
+  
  }
  .col-6{
     
@@ -370,18 +371,28 @@ padding-right: 11px;
  .comment{
      position: absolute;
  }
+ #message{
+    height: 130px;
+    width: 760px;
+    border-radius: 30px; 
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 0 15px 49px;
+    font-size: 16px;
 
+ }
  .col-8 input{
     border-radius: 30px;
     height: 46px;
-    width: 377px;
+    width: 360px;
     padding-left: 49px;
     margin: 0px 15px 30px 0px;
     background-color: #333;
     border: 1px solid #444;
     color: #fff;
     font-size: 14px;
-    opacity: .7;
  }
  .col-8 i{
     position: absolute;
@@ -393,7 +404,7 @@ padding-right: 11px;
  }
  .send{
    position: relative;
-   top:210px
+   top:180px
     }
     .send button{
       border-radius: 26px;
@@ -414,4 +425,5 @@ padding-right: 11px;
     .send button i{
        top: 15px;
        left: 40px;
+       opacity: unset;
     }
