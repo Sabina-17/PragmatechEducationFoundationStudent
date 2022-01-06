@@ -705,6 +705,7 @@ background-image: url(../img/footer-pattan-right.png);
     display: flex;
     font-size: 18px;
     justify-content: flex-end;
+    position: relative;
 }
 
 .kidpay {
@@ -730,7 +731,9 @@ background-image: url(../img/footer-pattan-right.png);
     width: 25%;
     display: flex;
 }
-
+.mail i:hover{
+color: #649a58;
+}
 .mail input {
     font-size: 12px;
     letter-spacing: .6px;
@@ -743,17 +746,3 @@ background-image: url(../img/footer-pattan-right.png);
     text-align: center;
 }
 
-.plane {
-    border: none;
-    height: 100%;
-    width: 10%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-}
-
-.plane :hover {
-    color: #649a58;
-}

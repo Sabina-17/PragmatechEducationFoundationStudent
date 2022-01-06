@@ -40,16 +40,14 @@ a {
     align-items: center;
 }
 .container-home{
-    /* background: #222 */
     text-decoration: none;
 }
 .navbar{
     border: 1px solid white;  
- position: absolute;
- top:10px;
- left:40px;
- 
-}
+    position: absolute;
+    top:10px;
+    left:40px;
+ }
 .navbar-nav {
     width: 60px;
     background-color: #333;
@@ -80,11 +78,10 @@ a {
     
 }
 .freelancer{
-   
     margin-left: 800px;
     width: 585px;
-    
 }
+
 .IM{
     padding-bottom: 10px;
     color: white;
@@ -108,67 +105,54 @@ padding-right: 11px;
 
  /* About Styles */
  #about{
-    
      background-color: #222;
      color: white;
  }
  .container-about{
-  
-     position: relative;
+    position: relative;
  }
+
  .container-text{
-   
-     text-align: center;
+    text-align: center;
      padding: 60px 0px 54px;
-   
- }
+}
  .container-text h2{
      font-size: 55px;
-     
- }
+}
   .container-text p{
      font-size: 15px;
      margin: 20px 0px 0px;
  }
  .col-12{
     display: flex;
-
     margin: 0px 200px ;
-
- }
+}
  .image{
      border: 7px solid #ffb400;
-  
- }
+}
  .image img{
      height: 440px;
      width: 440px;
  }
  .col-6{
-  
-    width: 100%;
+   width: 100%;
    margin-top: 26px;
-  
- }
+}
  .name-work{
      display: flex;
- 
-     font-size: 16px;
+    font-size: 16px;
 }
  .name{
-  
-    padding: 20px;
+  padding: 20px;
  }
  .name ul li{
      padding-bottom: 21px;
-     
- }
+}
  .name ul li span{
      padding-left: 20px;
  }
  .work{
-    
-    padding: 20px 40px;
+     padding: 20px 40px;
  }
  .work ul li{
      padding-bottom: 21px;
@@ -180,9 +164,9 @@ padding-right: 11px;
    padding-left: 22px;
  }
  .cv button{
-   border-radius: 26px;
+    border-radius: 26px;
     background-color: #ffb400;
-     color: white;
+    color: white;
     font-size: 16px;
     border: none;
     height: 46px;
@@ -225,15 +209,12 @@ padding-right: 11px;
  }
  .col{
     margin: 0px 200px;
-    
- }
+}
  .col4{
-  
     width: 100%;
     padding-bottom: 30px; 
     border: 2px solid #ffb400;
-    margin-left: 20px;
-   
+    margin-left: 20px;   
  }
  .col4 img{
      height: 70px;
@@ -248,15 +229,14 @@ padding-right: 11px;
  .skills{
      display: flex;
     }
-    span i{
-        padding-right: 10px;
-    }
+ span i{
+    padding-right: 10px;
+ }
 
  /* portfoli styls */
  #portfolio{
-    
     background-color: #222;
-    color: white;
+    color: #fff;
  }
  .container-portfolio{ 
      margin: 0px 200px;
@@ -283,20 +263,17 @@ padding-right: 11px;
     opacity: 1;
  }
  .images img{
-   
     width: 100%;
     height: 100%;
     object-fit: cover;
- 
  }
  .images img:hover{
     background-color: #ffb400;
  }
  .overlay{
-     position: absolute;
+    position: absolute;
     top: 23%;
     left: 10%;
- 
  }
  .format{
     color: white;
@@ -304,8 +281,7 @@ padding-right: 11px;
     text-align: center;
  }
  /* Content Stayls*/
- #contact{
-      
+ #contact{   
     background-color: #222;
     color: #fff;
  }
@@ -362,11 +338,9 @@ padding-right: 11px;
  }
  .input{
      position: relative;
-  
  }
  .col-6{
-    
-     margin-bottom: 30px;
+      margin-bottom: 30px;
  }
  .comment{
      position: absolute;
@@ -381,7 +355,6 @@ padding-right: 11px;
     font-size: 14px;
     padding: 12px 0 15px 49px;
     font-size: 16px;
-
  }
  .col-8 input{
     border-radius: 30px;
@@ -406,24 +379,24 @@ padding-right: 11px;
    position: relative;
    top:180px
     }
-    .send button{
-      border-radius: 26px;
-       background-color: #ffb400;
-        color: #fff;
-       font-size: 15px;
-       border: none;
-       height: 46px;
-       width: 230px;
-       padding: 0 33px;
-       line-height: 46px;
-       padding-left: 67px;
-       cursor: pointer;
-    }
-    .send button:hover{
-        background-color: #555;
-    }
-    .send button i{
-       top: 15px;
-       left: 40px;
-       opacity: unset;
-    }
+.send button{
+    border-radius: 26px;
+    background-color: #ffb400;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    height: 46px;
+    width: 230px;
+    padding: 0 33px;
+    line-height: 46px;
+    padding-left: 67px;
+    cursor: pointer;
+ }
+.send button:hover{
+    background-color: #555;
+ }
+.send button i{
+    top: 15px;
+    left: 40px;
+    opacity: unset;
+}
