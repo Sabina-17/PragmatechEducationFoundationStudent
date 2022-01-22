@@ -573,7 +573,7 @@ body {
     cursor: pointer;
 }
 
-​ .btns:hover {
+.btns:hover {
     border: 1px solid #649a58;
     background-color: #649a58;
 }

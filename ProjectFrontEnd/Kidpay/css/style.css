@@ -612,15 +612,11 @@ body {
     height: 400px;
     margin: 10px 50px;
     padding: 30px;
-    background-image: url(../img/footer-pattan-right.png);
-    background-repeat: no-repeat;
     background-position: right top;
     margin-right: 10px;
     position: relative;
 }
 
-background-image: url(../img/footer-pattan-left.png);
-background-image: url(../img/footer-pattan-right.png);
 .h2 {
     color: #000000;
 }
@@ -706,6 +702,7 @@ background-image: url(../img/footer-pattan-right.png);
     font-size: 18px;
     justify-content: flex-end;
     position: relative;
+    top: 394px;
 }
 
 .kidpay {
