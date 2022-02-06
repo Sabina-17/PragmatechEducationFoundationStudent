@@ -1,0 +1,392 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    background: #fff;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+  }
+
+    /* Home Styles */
+#home{
+    background-image: url(../img/fullscreendark.jpg);
+    height: 730px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+.container-home{
+    text-decoration: none;
+}
+.navbar{
+    border: 1px solid white;  
+    position: absolute;
+    top:10px;
+    left:40px;
+ }
+.navbar-nav {
+    width: 60px;
+    background-color: #333;
+    border-radius: 30px;
+  }
+  
+  .navbar-nav a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+   color: white;
+   }
+  
+.bars{
+    border: 1px solid white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  
+}
+.bars a{
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+}
+.bars:hover{
+    
+}
+.freelancer{
+    margin-left: 800px;
+    width: 585px;
+}
+
+.IM{
+    padding-bottom: 10px;
+    color: white;
+}
+.btn button{
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin-right: 25px;
+    border: 1px solid  #ffb400;
+    background-color: #ffb400;
+    color: #fff;
+   font-weight: bold;
+   cursor: pointer;
+}
+.btn button i{
+padding-right: 11px;
+}
+.btn button:hover{
+    background-color:#555;
+}
+
+ /* About Styles */
+ #about{
+     background-color: #222;
+     color: white;
+ }
+ .container-about{
+    position: relative;
+ }
+
+ .container-text{
+    text-align: center;
+     padding: 60px 0px 54px;
+}
+ .container-text h2{
+     font-size: 55px;
+}
+  .container-text p{
+     font-size: 15px;
+     margin: 20px 0px 0px;
+ }
+ .col-12{
+    display: flex;
+    margin: 0px 200px ;
+}
+ .image{
+     border: 6px solid #ffb400;
+}
+ .image img{
+     height: 440px;
+     width: 440px;
+ }
+ .col-6{
+   width: 100%;
+   margin-top: 26px;
+}
+ .name-work{
+     display: flex;
+    font-size: 16px;
+}
+ .name{
+  padding: 20px;
+ }
+ .name ul li{
+     padding-bottom: 21px;
+}
+ .name ul li span{
+     padding-left: 20px;
+ }
+ .work{
+     padding: 20px 40px;
+ }
+ .work ul li{
+     padding-bottom: 21px;
+ }
+ .work ul li span{
+     padding-left: 20px;
+ }
+ .cv{
+   padding-left: 22px;
+ }
+ .cv button{
+    border-radius: 26px;
+    background-color: #ffb400;
+    color: white;
+    font-size: 16px;
+    border: none;
+    height: 46px;
+    width: 230px;
+ }
+ .cv button:hover{
+     background-color: #555;
+ }
+ .cv button i{
+     padding-right: 15px;
+ }
+ .row{
+    margin: 60px 200px;
+     display: flex;
+     border-top: 1px solid grey;
+ }
+ .item{
+     border-left: 1px solid #ffb400;
+     padding: 0px 39px 50px;
+    line-height: 30px;
+ }
+ .bullet{
+     border: 2px solid #ffb400;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 193px;
+    background: #222;
+  
+ }
+ .bulet{
+    border: 2px solid #ffb400;
+    height: 15px;
+    width: 15px;  
+    border-radius: 50%;
+    position: absolute;
+    left: 753px;
+    background: #222;
+ }
+ .col{
+    margin: 0px 200px;
+}
+ .col4{
+    width: 100%;
+    padding-bottom: 30px; 
+    border: 2px solid #ffb400;
+    margin-left: 20px;   
+ }
+ .col4 img{
+     height: 70px;
+     width: 70px;
+     margin-left: 147px;
+ }
+ .col4 h4{
+    padding-bottom: 34px;
+    font-size: 20px;
+    text-align: center;
+ }
+ .skills{
+     display: flex;
+    }
+ span i{
+    padding-right: 10px;
+ }
+
+ /* portfoli styls */
+ #portfolio{
+    background-color: #222;
+    color: #fff;
+ }
+ .container-portfolio{ 
+     margin: 0px 200px;
+}
+.text{
+    text-align: center;
+    padding: 60px 0px 54px;
+}
+.text h2{
+    font-size: 55px;
+}
+.text p{
+    font-size: 15px;
+    margin: 20px 0px 0px;
+}
+ .images{
+     position: relative;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-gap: 20px;
+     cursor: pointer;
+}
+ .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    position: relative;
+}
+ 
+ /* Content Stayls*/
+ #contact{   
+    background-color: #222;
+    color: #fff;
+ }
+ .container-contact{}
+ .contact{
+    margin: 0px 200px;
+ }
+ .col-4{
+    width: 30%;
+ }
+ .col-4 ul li{
+    padding-bottom: 26px;
+ }
+ .col-4 ul li span{
+     display: block;
+     margin-bottom: 10px;
+     font-size: 15px;
+ }
+ .col-4 ul li span i{
+     color: #ffb400;
+ }
+ .sosial{}
+ .sosial ul {
+     display: flex;
+     margin-top: 12px;
+ }
+ .sosial ul li{
+    border: 1px solid #ffb400;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 12px;
+ }
+ .sosial ul li:hover{
+     background-color: #ffb400;
+ }
+ .sosial ul li a:hover{
+     color: #fff;
+ }
+ .sosial ul li a{
+     color: #ffb400;
+ }
+ .col-8{
+     margin-left: 90px;
+     width: 100%;
+     height: 492px;
+ }
+ .col-8 p{
+     font-size: 16px;
+     line-height: 32px;
+     margin: 0 0 24px;
+ }
+ .input{
+     position: relative;
+ }
+ .col-6{
+      margin-bottom: 30px;
+ }
+ .comment{
+     position: absolute;
+ }
+ #message{
+    height: 130px;
+    width: 760px;
+    border-radius: 30px; 
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 0 15px 49px;
+    font-size: 16px;
+ }
+ .col-8 input{
+    border-radius: 30px;
+    height: 46px;
+    width: 360px;
+    padding-left: 49px;
+    margin: 0px 15px 30px 0px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 14px;
+ }
+ .col-8 i{
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    font-size: 16px;
+    color: #eee;
+    opacity: .3;
+ }
+ .send{
+   position: relative;
+   top:180px
+    }
+.send button{
+    border-radius: 26px;
+    background-color: #ffb400;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    height: 46px;
+    width: 230px;
+    padding: 0 33px;
+    line-height: 46px;
+    padding-left: 67px;
+    cursor: pointer;
+ }
+.send button:hover{
+    background-color: #555;
+ }
+.send button i{
+    top: 15px;
+    left: 40px;
+    opacity: unset;
+}
