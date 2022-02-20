@@ -45,38 +45,50 @@ a {
     text-decoration: none;
 }
 .navbar{
-    border: 1px solid white;  
-    position: absolute;
-    top:10px;
-    left:40px;
+    position: fixed;
+    top: 10px;
+    left: 40px;
  }
+
 .navbar-nav {
     width: 60px;
     background-color: #333;
     border-radius: 30px;
-    
-  }
+    visibility: hidden;
+    opacity: 0;
+ }
   
   .navbar-nav a {
     display: block;
     padding: 16px;
     width: 50px;
-   color: white;
-   display: flex;
+    color: white;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-  
-   
-   }
+  }
+
    .navbar-nav i{
     padding-left: 7px;
    }
+
    .navbar-nav span{
-       margin-left: 30px;
-       width: 200px;
-       border: 1px solid white;
        display: block;
-   }
+       margin-left: 30px;
+       width: 100px;
+       border-left: 1px solid white;
+    }
+
+   .navbar-nav a:hover{
+       color: #ffb400;
+       transition: all ease .5s;
+    }
+
+   .navbar-nav a span:hover{
+      transition: all ease .2s;
+      padding-left: 35px !important
+    }
+
 .bars{
     background-color: #555;
     height: 60px;
@@ -85,23 +97,27 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-  
 }
-.bars a{
+
+#open{
     font-size: 20px;
     text-align: center;
     margin: 10px;
     text-decoration: none;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    
+}
 
+#close {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
 }
-.bars:hover{
-    
-}
+
 .freelancer{
     margin-left: 800px;
     width: 585px;

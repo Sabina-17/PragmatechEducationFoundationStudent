@@ -22,13 +22,20 @@
     <section id="about">
         <div class="container-about">
             <div class="navbar">
-
+                <div class="bars">
+                    <i class="fas fa-bars" onclick="deyis()" id="open"></i>
+                    <i class="fas fa-times" onclick="bagla()" id="close"></i>
+                </div>
                 <div class="navbar-nav ">
-                    <a href="index.html"><i class="fa fa-home"></i></a>
-                    <a href="about.html"><i class="fa fa-user"></i></a>
-                    <a href="portfolio.html"><i class="fa fa-briefcase"></i></a>
-                    <a href="contact.html"><i class="fa fa-envelope"></i></a>
-                    <a href="#"><i class="fa fa-comments"></i></a>
+                    <a href="index.html" onclick="_border()"><i class="fa fa-home"></i><span
+                            style="padding-left: 25px;margin-left: 17px;">HOME</span></a>
+                    <a href="about.html" onclick="_border()"><i class="fa fa-user"></i><span
+                            style="padding-left: 25px;margin-left: 20px;">ABOUT</span></a>
+                    <a href="portfolio.html" onclick="_border()"><i class="fa fa-briefcase"></i><span
+                            style="padding-left: 25px;margin-left: 18px;">PORTFOLIO</span></a>
+                    <a href="contact.html" onclick="_border()"><i class="fa fa-comments"></i><span
+                            style="padding-left: 25px;margin-left: 16px;">CONTACT</span></a>
+                    <!-- <a href="#"><i class="fa fa-envelope"></i></a> -->
                 </div>
             </div>
             <div class="container-text">
@@ -152,6 +159,7 @@
         </div>
     </section>
     <!-- About Section End -->
+    <script src="./JS/app.js"></script>
 </body>
 
 </html>
